@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  height: 90vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  position: relative;
+}
+
+header > ul {
+  list-style-type: none;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+header > ul > li {
+  font-size: 1.5rem;
+}
+
+header > ul > li:hover {
+  font-size: 2rem;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.gretings{
+    position: absolute;
+    top:35%;
+    left: 10%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+}
+
+.gretings > h1{
+    font-size: 4rem;
+}
+
+.gretings > h2{
+    font-size: 2.5rem;
+}
+
+.gretings > h4{
+    font-size: 2rem;
+}
+
+.gretings > h4 >a{
+    color: blue;
+    font-style: none;
+    text-decoration: none;
+}
+
+.rishi-img{
+    position: absolute;
+    bottom: 1px;
+    right: 8%;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #E2E8F0;
+    background-color: #333333;
+}
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: 3rem;
+            position: relative;
+            top: 3px;
+            color: beige;
+        }
+    }
+   
+
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: whitesmoke;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
