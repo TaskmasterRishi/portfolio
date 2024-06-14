@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
   padding: 0;
@@ -33,7 +34,7 @@ body {
 }
 
 .home {
-  height: 90vh;
+  height: 80vh;
   width: calc(100vw - (100vw - 100%));
   overflow-x: hidden;
   background-repeat: no-repeat;
@@ -128,13 +129,6 @@ a {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-
-    p {
-      font-size: 3rem;
-      position: relative;
-      top: 3px;
-      color: beige;
-    }
   }
 }
 
@@ -176,24 +170,61 @@ a {
   display: flex;
   flex-direction: column;
 
-  img {
+  .rishi {
     position: absolute;
     gap: 0;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    bottom: 80%;
     border-radius: 500px;
     transition: 0.5s ease;
     background-color: white;
+    border: 2px solid rgb(6, 96, 199);
   }
 }
 
 .navbar-active {
-  img {
+  .rishi {
     opacity: 0;
     transform: translateY(-40px);
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+
+  p,
+  span {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+  }
+
+  .n {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.show-name {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.hide-name{
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity .5s ease, transform .5s ease;
+
 }
