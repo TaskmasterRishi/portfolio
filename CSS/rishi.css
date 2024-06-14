@@ -7,21 +7,21 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   z-index: 100;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: #9e9e9e;
   border-radius: 10px;
 }
 
-body{
+body {
   height: 200vh;
 }
 
@@ -121,7 +121,8 @@ a {
   width: calc(100vw - (100vw - 100%));
   position: sticky;
   position: -webkit-sticky;
-  top : 0;
+  top: 0;
+
   a {
     display: flex;
     justify-content: center;
@@ -184,6 +185,15 @@ a {
     margin-right: auto;
     bottom: 80%;
     border-radius: 500px;
+    transition: 0.5s ease;
     background-color: white;
+  }
+}
+
+.navbar-active {
+  img {
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
   }
 }

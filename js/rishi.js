@@ -84,7 +84,7 @@ if (event.target.classList.contains("nav-link")) {
 
 // Navbar Scroll Effect
 window.addEventListener('scroll', function() {
-const scrollThreshold = window.innerHeight * 0.2; 
+const scrollThreshold = window.innerHeight * 0.6; 
 const navbar = document.querySelector('.navbar');
 
 if (window.scrollY > scrollThreshold) {
@@ -93,3 +93,14 @@ if (window.scrollY > scrollThreshold) {
     navbar.classList.remove('navbar-active');
 }
 });
+
+window.addEventListener('scroll', function() {
+  const scrollThreshold = window.innerHeight * 0.9; 
+  const navbar = document.querySelector('.navbar');
+  const banLogo = navbar.querySelector('navlogo')
+  if (window.scrollY > scrollThreshold) {
+      navbar.style.position = "fixed"
+  } else {
+      navbar.style.position = "relative"
+  }
+  });
