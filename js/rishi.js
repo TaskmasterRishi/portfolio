@@ -82,6 +82,7 @@ document.addEventListener("click", function (event) {
   }
 });
 
+
 // Navbar Scroll Effect
 window.addEventListener('scroll', function () {
   const scrollThreshold = window.innerHeight * 0.6;
@@ -102,10 +103,12 @@ window.addEventListener('scroll', function () {
 window.addEventListener('scroll', function () {
   const scrollThreshold = window.innerHeight * 0.8;
   const navbar = document.querySelector('.navbar');
-  const banLogo = navbar.querySelector('navlogo')
+  const content = this.document.getElementById('about');
   if (window.scrollY > scrollThreshold) {
     navbar.classList.add('sticky')
+    content.style.marginTop = "5rem"
   } else {
     navbar.classList.remove('sticky')
+    content.style.marginTop = "0rem"
   }
 });
